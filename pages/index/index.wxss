@@ -1,0 +1,11 @@
+.main {
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 44rpx;
+}
+.demo_circle {
+  margin: 0 auto;
+  width: 140rpx;
+  height: 140rpx;
+}

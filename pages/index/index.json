@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "jolly-circle": "/components/circleDownTime/index"
+  },
+  "disableScroll": true
+}

@@ -1,0 +1,4 @@
+<!--components/circleDownTime/index.wxml-->
+<view class="circle_animation">
+    <canvas style="width: 70px; height: 70px;" type="2d" id="jCanvas"></canvas>
+  </view>

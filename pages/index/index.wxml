@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="main">
+  <view wx:if="{{showCanvas}}" class="demo_circle">
+    <jolly-circle id="circle" time="{{10}}"></jolly-circle>
+  </view>
+  <view><button bindtap="test">开始</button></view>
+</view>
