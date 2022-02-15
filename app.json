@@ -5,7 +5,7 @@
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#D8322E",
-        "navigationBarTitleText": "See JollyLee",
+        "navigationBarTitleText": "组件展示",
         "navigationBarTextStyle": "white"
     },
     "style": "v2",
