@@ -1,0 +1,47 @@
+
+<page-container
+  show="{{show}}"
+  custom-style="{{customStyle}}"
+  overlay="{{overlay}}"
+  bind:beforeleave="onBeforeLeave"
+  bind:afterleave="onAfterLeave"
+  >
+  <view class="keyboard_container {{graybg?'mask_gray':''}}">
+    <view class="keyBoard" style="height: {{ model === 'pay' ? '827rpx' : '100%' }}">
+      <view wx:if="{{model === 'pay'}}" class="item_title">
+        <image class="close" src="../../assets/images/icon_exit.png" catchtap="exit"></image>
+        <text class="title">{{title}}</text>
+      </view>
+      <view wx:else class="item_title_set">
+        <view class="item_title_set_txt">{{txt_set}}
+          <image class="item_title_set_tip" src="../../assets/images/icon_question.png"></image>
+        </view>
+      </view>
+      <view class="tip">{{errortip}}</view>
+      <section class="pwd-modal" catchtap="option">
+        <ul>
+            <li><i class="circle" wx:if="{{value.length >= 1}}"></i></li>
+            <li><i class="circle" wx:if="{{value.length >= 2}}"></i></li>
+            <li><i class="circle" wx:if="{{value.length >= 3}}"></i></li>
+            <li><i class="circle" wx:if="{{value.length >= 4}}"></i></li>
+            <li><i class="circle" wx:if="{{value.length >= 5}}"></i></li>
+            <li><i class="circle" wx:if="{{value.length >= 6}}"></i></li>
+        </ul>
+        <input
+          ref="inputs"
+          style="border: 1px solid blue;"
+          type="safe-password"
+          maxlength="6"
+          focus="{{isFocus}}"
+          placeholder=""
+          safe-password-cert-path="../../20220126.crt" 
+          safe-password-time-stamp="{{stamp}}" 
+          safe-password-nonce="{{nonce}}"
+          safe-password-custom-hash="{{customhash}}"
+          bind:blur="onBlur"
+          bind:input="onInput"
+        ></input>
+      </section>
+    </view>
+  </view>
+</page-container>

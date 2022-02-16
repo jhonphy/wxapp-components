@@ -3,5 +3,9 @@
   <view wx:if="{{showCanvas}}" class="demo_circle">
     <jolly-circle id="circle" time="{{10}}"></jolly-circle>
   </view>
-  <view><button bindtap="test">开始</button></view>
+  <view><button bindtap="test">开始倒计时</button></view>
+  <view class="demo_keyboard">
+    <view><button bindtap="keyboard">键盘</button></view>
+    <keyboard id="keyboard"></keyboard>
+  </view>
 </view>

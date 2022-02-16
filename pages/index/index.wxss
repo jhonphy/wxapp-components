@@ -9,3 +9,8 @@
   width: 140rpx;
   height: 140rpx;
 }
+.demo_keyboard {
+  padding: 10rpx 0;
+  width: 100%;
+  height: 50rpx;
+}

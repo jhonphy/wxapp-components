@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "jolly-circle": "/components/circleDownTime/index"
+    "jolly-circle": "/components/circleDownTime/index",
+    "keyboard": "/components/safeKeyboard/index"
   },
   "disableScroll": true
 }
